@@ -38,12 +38,11 @@ collapsibleHeaders.forEach(header => {
 // Fondos disponibles por estilo
 const backgrounds = {
   boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg"],
-  baby: ["baby1.jpg", "baby2.jpg", "baby3.jpg"],
   cumple: ["cumple1.jpg", "cumple2.jpg", "cumple3.jpg"],
   networking: ["networking1.jpg", "networking2.jpg", "networking3.jpg"]
 }
 styleSelect.addEventListener("change", () => {
-  const selectedStyle = styleSelect.value; // boda, baby, cumple, networking
+  const selectedStyle = styleSelect.value; // boda, cumple, networking
   const images = backgrounds[selectedStyle] || [];
 
   // limpiar contenedor antes de meter nuevas imágenes

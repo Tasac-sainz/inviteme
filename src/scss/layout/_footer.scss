@@ -1,75 +1,43 @@
 @use '../core/variables' as vars;
 
 .footer {
-  background: linear-gradient(90deg, #2A7C7C 60%, #e67c2f 100%);
+  background: linear-gradient(90deg, #3d0c4b 30%, #b49eb0 100%);
   padding: 20px;
   font-size: 14px;
-  color: #fff; // Cambiado de #333 a #fff para mejor contraste
+  color: #fff; 
   text-align: center;
+  height: 20px;
 }
-
-.footer__brand,
-.team-member span {
-  color: #fff; // Asegura que los nombres sean visibles
-}
-
-.social-icons img {
-  filter: drop-shadow(0 0 2px #fff); // Resalta los iconos sobre fondo oscuro
-}
-
 .footer__top {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 700;
 }
-
 .footer__brand {
-  display: block;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 4px;
-}
-
-.footer__team {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding-bottom: 30px;
 }
 
 .team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .team-member span {
-  font-weight: bold;
   font-size: 15px;
+  padding-right: 15px;
 }
 
-.social-icons {
-  display: flex;
-  gap: 10px;
+img {
+  width: 25px;
+  background-color: #e8e5e5;
+  border-radius: 15px;
 }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  transition: opacity 0.3s;
-}
-
-.social-icons a:hover img {
-  opacity: 0.7;
-}
-
-/* Responsive para pantallas grandes (opcional) */
 @media (min-width: 600px) {
-  .footer__team {
-    flex-direction: row;
-    justify-content: space-around;
-  }
 
-  .team-member {
-    align-items: center;
-  }
+.footer__top {
+	margin-top: 40px;
+	text-align: center;
+}
 }
 

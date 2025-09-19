@@ -6,8 +6,8 @@ import domtoimage from 'dom-to-image';
 
 const createButton = document.querySelector(".js-create");
 
-createButton.addEventListener("click", (e) => {
-    e.preventDefault();
+createButton.addEventListener("click", (event) => {
+    event.preventDefault();
 
    domtoimage
    .toJpeg(document.querySelector('.preview'), { quality: 0.95 })
@@ -16,5 +16,9 @@ createButton.addEventListener("click", (e) => {
         link.download = 'my-image-name.jpeg';
         link.href = dataUrl;
         link.click();
+    })
+    .catch((error) => {
+        console.error("Error creando la imagen:", error);
     });
+    
 });
