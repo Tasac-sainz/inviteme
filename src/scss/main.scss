@@ -11,6 +11,21 @@
   src: url("/fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 700;  /* variable font: soporta varios pesos */
   font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Comic Relief";
+  src: url("/fonts/ComicRelief-Regular.ttf") format("truetype");
+  font-weight: 100 900;  /* variable font: soporta varios pesos */
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("/fonts/PermanentMarker-Regular.ttf") format("truetype");
   font-display: swap;
 }
 

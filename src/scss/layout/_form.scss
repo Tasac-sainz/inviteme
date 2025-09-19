@@ -35,6 +35,10 @@ input[type="color"] {
   font-size: 16px;
   width: 100%;
 }
+#message {
+  width: 100%;
+  height: 120px;
+}
 
 /* Botón genérico */
 .form__button,
@@ -42,29 +46,26 @@ input[type="color"] {
   background: linear-gradient(135deg, #d8b4fe, #ffffff);
   color: #2c2b2b;
   border: none;
-  border-radius: 32px;
-  padding: 15px 0;
-  width: 80%;
-  max-width: 220px;
-  font-size: 1.25rem;
-  font-weight: 700;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 900;
   cursor: pointer;
   box-shadow: 0 4px 16px rgba(44,62,80,0.13);
   transition: background 0.2s, transform 0.2s;
   margin: 25px auto 36px auto;
-  letter-spacing: 1px;
   display: block;
 }
 .form__button:hover, .share__button:hover {
-  background: linear-gradient(90deg, #1e5c5c 60%, #e67c2f 100%);
+  background: linear-gradient(100deg, #15a4a4 50%, #b66ba8 100%);
   transform: scale(1.04);
+  color: white;
 }
 
 .content__share {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .form__button:hover,

@@ -9,6 +9,7 @@ console.log('>> Ready :)');
 // Collapsables
 const collapsibleHeaders = document.querySelectorAll(".collapsible__header");
 const collapsibleContents = document.querySelectorAll(".collapsible__content");
+const resetBtn = document.querySelector(".js-reset");
 
 // Formulario - inputs
 const inputName = document.getElementById("name");
@@ -57,8 +58,14 @@ styleSelect.addEventListener("change", () => {
     
     imgElement.addEventListener("click", () => {                  //TANIA:he añadido este evento para que el fondo elegido se pinte también en preview
       preview.style.backgroundImage = `url(${imgElement.src})`;
+      localStorage.setItem("background", preview.style.backgroundImage)
     });
 
     backgroundsContainer.appendChild(imgElement);
   });
 });
+
+const handleClickReset = () => {
+  localStorage.clear();
+}
+resetBtn.addEventListener ("click", handleClickReset)
