@@ -37,7 +37,7 @@ collapsibleHeaders.forEach(header => {
 
 // Fondos disponibles por estilo
 const backgrounds = {
-  boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg"],
+  boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg", "boda4.jpg"],
   cumple: ["cumple1.jpg", "cumple2.jpg", "cumple3.jpg"],
   networking: ["networking1.jpg", "networking2.jpg", "networking3.jpg"]
 }
@@ -51,7 +51,7 @@ styleSelect.addEventListener("change", () => {
   // recorrer imágenes y pintarlas
   images.forEach(img => {
     const imgElement = document.createElement("img");
-    imgElement.src = `./images/${selectedStyle}/${img}`; // 👈 asegúrate de que la ruta coincide con tu carpeta
+    imgElement.src = `./images/${selectedStyle}/${img}`; 
     imgElement.alt = selectedStyle;
     imgElement.classList.add("background-option");
     

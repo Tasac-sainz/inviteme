@@ -13,18 +13,27 @@ const hostMail = document.querySelector(".preview__mail");
 const hostPhone = document.querySelector(".preview__phone");
 const hostAddress = document.querySelector(".preview__address");
 
+const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
 const fontSlider = document.querySelector(".js-font-size");
 const fontFamily = document.querySelector(".js-font");
 const fontColor = document.querySelector(".js-font-color");
 
-inputName.addEventListener("input", (event) => {
-    hostName.textContent = event.target.value;
-})
 inputMessage.addEventListener("input", (event) => {
     message.textContent = event.target.value;
 })
+inputName.addEventListener("input", (event) => {
+    hostName.textContent = event.target.value;
+})
 inputDate.addEventListener("input", (event) => {
-    eventDate.textContent = event.target.value;
+    const selectedDate = event.target.value;
+    if (selectedDate) {
+        const [year, month, day] = selectedDate.split("-");
+        const monthName = months[parseInt(month, 10)-1];
+        eventDate.textContent = `${day}/${monthName}/${year}`;
+    }else {
+        eventDate.textContent = "";
+    }
 })
 inputEmail.addEventListener("input", (event) => {
     hostMail.textContent = event.target.value;

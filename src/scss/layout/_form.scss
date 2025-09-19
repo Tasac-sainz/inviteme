@@ -55,6 +55,10 @@ input[type="color"] {
   letter-spacing: 1px;
   display: block;
 }
+.form__button:hover, .share__button:hover {
+  background: linear-gradient(90deg, #1e5c5c 60%, #e67c2f 100%);
+  transform: scale(1.04);
+}
 
 .content__share {
   display: flex;
