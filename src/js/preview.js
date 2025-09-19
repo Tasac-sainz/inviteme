@@ -98,3 +98,18 @@ fontColor.addEventListener("input", (event) => {
     preview.style.color = newColor;
     localStorage.setItem("color", newColor)
 })
+
+//AÑADIR FOTO
+
+const handleClickPhoto = (event) => {
+    if(event.target.files && event.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+            previewImage.src = event.target.result;
+            previewImage.style.display = "block";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+    };
+
+inputPhoto.addEventListener ("change", handleClickPhoto)

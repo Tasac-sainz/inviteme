@@ -19,6 +19,7 @@ const inputPhone = document.getElementById("phone");
 const inputDate = document.getElementById("date");
 const inputAddress = document.getElementById("address");
 const inputPhoto = document.getElementById("photo");
+const previewImage = document.getElementById("preview-image");
 const styleSelect = document.getElementById("style");
 const backgroundsContainer = document.querySelector(".js-backgrounds");
 
