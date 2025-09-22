@@ -34,13 +34,3 @@ El proyecto sigue un enfoque **modular y escalable**, utilizando partials para l
 - Diseño responsive y accesible 💡
 
 ---
-
-## Funcionalidades principales 
-
-- Formulario interactivo con inputs en tiempo real 
-- Vista previa instantánea que refleja los datos del formulario 
-- Secciones colapsables para mejorar la UX 
-- Validaciones de campos con feedback visual 
-- Persistencia de datos usando LocalStorage 
-- Opción de descargar los datos del usuario 
-- Diseño responsive y accesible 
