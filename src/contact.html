@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>invite ME!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="icon" href="./images/favicon_inviteme2.png" />
+  </head>
+
+  <body>
+    <load src="./partials/header.html" title="Bienvenidos a invite ME!" />
+    <form action="https://formspree.io/f/xdkwnybg" method="post" class="sugestion-form">
+          <span>¡Envíanos tus sugerencias! Si echas en falta algún evento o quieres que añadamos tu diseño, escríbenos</span>
+          <input type="text" placeholder="escribe tu nombre..." class="sugestion-input"/>
+          <input type="email" placeholder="escribe tu correo electrónico" class="sugestion-input"/>
+          <textarea name="sugestion" class="sugestion-area" placeholder="Te escuchamos..."></textarea>
+          <button type="submit" class="btn-sugestion">Enviar</button>
+        </form>
+        
+    <load src="./partials/footer.html" />
+        
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

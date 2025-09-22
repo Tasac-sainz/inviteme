@@ -6,7 +6,7 @@
     <title>invite ME!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="icon" href="./images/favicon_inviteme2.png" />
     <script type="module" crossorigin src="./assets/main-76021ca2.js"></script>
@@ -15,8 +15,7 @@
   </head>
 
   <body>
-    <div class="page">
-      <header class="hero__header">
+    <header class="hero__header">
   <div class="header__content">
     <span class="header__icon">
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -39,28 +38,15 @@
     Diseña invitaciones únicas y creativas para tus eventos
   </p>
 </header>
-      <main class="main-page">
-  <section class="hero">
-    <h2 class="hero__subtitle">Crea tu invitación personalizada</h2>
-    <p class="hero__desc">Crea mejores conexiones de forma fácil y cómoda</p>
-    <div class="hero__steps">
-      <div class="step">
-        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icono rellenar" width="32" height="32"/>
-        <span>Rellena</span>
-      </div>
-      <div class="step">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="icono diseñar" width="32" height="32"/>
-        <span>Diseña</span>
-      </div>
-      <div class="step">
-        <img src="images/downloading.png" alt="icono descargar" width="32" height="32"/>
-        <span>Descarga</span>
-      </div>
-    </div>
-    <button class="hero__btn" id="startBtn"><a href="../design.html">COMENZAR</a></button>
-  </section>
-</main>
-      <footer class="footer">
+    <form action="https://formspree.io/f/xdkwnybg" method="post" class="sugestion-form">
+          <span>¡Envíanos tus sugerencias! Si echas en falta algún evento o quieres que añadamos tu diseño, escríbenos</span>
+          <input type="text" placeholder="escribe tu nombre..." class="sugestion-input"/>
+          <input type="email" placeholder="escribe tu correo electrónico" class="sugestion-input"/>
+          <textarea name="sugestion" class="sugestion-area" placeholder="Te escuchamos..."></textarea>
+          <button type="submit" class="btn-sugestion">Enviar</button>
+        </form>
+        
+    <footer class="footer">
     <div class="footer__team">
         <div class="team-member">
             <div class="home">
@@ -81,7 +67,7 @@
 </footer>
 
     
-    </div>
+        
     
   </body>
 </html>

@@ -1,0 +1,43 @@
+.sugestion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+    color: white;
+}
+
+.sugestion-input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.sugestion-area {
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    height: 300px;
+}
+
+.btn-sugestion {
+    background: linear-gradient(135deg, #d8b4fe, #ffffff);
+    color: #2c2b2b;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+    transition: background 0.2s, transform 0.2s;
+    margin: 25px auto 36px auto;
+    display: block;
+}
+.btn-sugestion:hover {
+    background: linear-gradient(100deg, #15a4a4 50%, #b66ba8 100%);
+    transform: scale(1.04);
+    color: white;
+}
+
