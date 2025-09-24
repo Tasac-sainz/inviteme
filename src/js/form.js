@@ -39,7 +39,7 @@ collapsibleHeaders.forEach(header => {
 
 // Fondos disponibles por estilo
 const backgrounds = {
-  boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg", "boda.png"],
+  boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg", "boda4.jpg"],
   cumple: ["cumple1.jpg", "cumple2.jpg", "cumple3.jpg"],
   networking: ["networking1.jpg", "networking2.jpg", "networking3.jpg"]
 }
