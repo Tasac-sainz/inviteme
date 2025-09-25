@@ -39,7 +39,7 @@ collapsibleHeaders.forEach(header => {
 
 // Fondos disponibles por estilo
 const backgrounds = {
-  boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg", "boda4.jpg", "boda5.jpg"],
+  boda: ["boda1.jpg", "boda2.jpg", "boda3.jpg", "boda4.jpg", "boda5.jpg", "boda6.jpg"],
   cumple: ["cumple1.jpg", "cumple2.jpg", "cumple3.jpg"],
   networking: ["networking1.jpg", "networking2.jpg", "networking3.jpg"]
 }
@@ -57,7 +57,7 @@ styleSelect.addEventListener("change", () => {
     imgElement.alt = selectedStyle;
     imgElement.classList.add("background-option");
     
-    imgElement.addEventListener("click", () => {                  //TANIA:he añadido este evento para que el fondo elegido se pinte también en preview
+    imgElement.addEventListener("click", () => {                  //He añadido este evento para que el fondo elegido se pinte también en preview
       preview.style.backgroundImage = `url(${imgElement.src})`;
       localStorage.setItem("background", preview.style.backgroundImage)
     });
@@ -66,7 +66,28 @@ styleSelect.addEventListener("change", () => {
   });
 });
 
-const handleClickReset = () => {
-  localStorage.clear();
+const handleClickReset = (event) => {
+    event.preventDefault();
+    inputMessage.value = "";
+    message.textContent = "";
+    inputName.value = "";
+    hostName.innerHTML = "";
+    inputEmail.value = "";
+    hostMail.textContent = "";
+    inputPhone.value = "";
+    hostPhone.textContent = "";
+    inputDate.value = ""; 
+    eventDate.textContent = "";
+    hostAddress.textContent = "";
+    inputAddress.value = ""; 
+    hostAddress.textContent = ""; 
+    inputPhoto.value = "";
+    preview.style.backgroundImage = "";
+    previewMain.style.fontSize = "";
+    preview.style.fontFamily = "";
+    preview.style.color = "";
+    previewImage.src = "";
+    previewImage.style.display = "none";
+
 }
-resetBtn.addEventListener ("click", handleClickReset)
+resetBtn.addEventListener ("click", handleClickReset);
