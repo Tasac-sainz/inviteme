@@ -1,6 +1,8 @@
-/* ------------------------------
-   FORMULARIO Y DISEÑO
------------------------------- */
+
+.target {
+  display: flex;
+  flex-direction: column;
+}
 .form,
 .design
 {
@@ -146,7 +148,13 @@ input[type="color"] {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
+
+  .target {
+  display: flex;
+  flex-direction: row;
+  }
+
   .form,
   .design,
   .share {
